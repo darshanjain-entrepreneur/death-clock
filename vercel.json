@@ -2,9 +2,6 @@
   "version": 2,
   "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
-  "functions": {
-    "api/index.mjs": {}
-  },
   "rewrites": [
     { "source": "/api(.*)", "destination": "/api/index.mjs" },
     { "source": "/(.*)", "destination": "/index.html" }
